@@ -760,6 +760,7 @@ button {
   cursor: pointer;
 }
 .form-newsletter button svg {
+  fill: #fff;
   display: flex;
   margin-left: 24px;
 }
