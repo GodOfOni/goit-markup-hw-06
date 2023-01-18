@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <link href="css/modern-normalized.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>projekt na kurs</title>
-    <link href="css/index.css" rel="stylesheet" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projekt na kurs</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link href="css/index.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
   <body>
     <header class="page-hdr">
       <div class="container box-header">
@@ -74,7 +77,126 @@
             </button>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
-                <button class="close-btn" data-modal-close>&times;</button>
+                
+                <form class="form">
+                  <button class="close-btn" data-modal-close>&times;</button>
+                  <p class="form-title">
+                      Leave your information and we'll call you back
+                  </p>
+                  <div
+                      class="form-group"
+                      role="group"
+                      aria-labelledby="username-head"
+                  >
+                      <label
+                          >Name
+                          <div class="box-input">
+                              <input
+                                  type="text"
+                                  name="username"
+                              /><svg 
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18px"
+                                  height="18px"
+                              >
+                                  <use
+                                      href="/images/icons.svg#icon-person-black-18dp-1-5"
+                                  ></use>
+                              </svg>
+                          
+                          </div>
+                      </label>
+                  </div>
+                  <div
+                      class="form-group"
+                      role="group"
+                      aria-labelledby="phone-head"
+                  >
+                      <label
+                          >Telephone
+                          <div class="box-input">
+                              <input
+                                  type="tel"
+                                  name="phone_number"
+                              /><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18px"
+                                  height="18px"
+                              >
+                                  <use
+                                      href="./images/icons.svg#icon-phone-black-18dp-1"
+                                  ></use>
+                              </svg></div
+                      ></label>
+                  </div>
+
+                  <div
+                      class="form-group"
+                      role="group"
+                      aria-labelledby="email-head"
+                  >
+                      <label
+                          >E-mail
+                          <div class="box-input">
+                              <input
+                                  type="email"
+                                  name="email"
+                              /><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18px"
+                                  height="18px"
+                              >
+                                  <use
+                                      href="./images/icons.svg#icon-email-black-18dp-1"
+                                  ></use>
+                              </svg></div
+                      ></label>
+                  </div>
+
+                  <div
+                      class="form-group"
+                      role="group"
+                      aria-labelledby="comment-area"
+                  >
+                      <label
+                          >Comments
+                          <textarea
+                              name="comment"
+                              rows="5"
+                              placeholder="Enter the text"
+                          ></textarea>
+                      </label>
+                  </div>
+                  <div
+                      class="form-statute"
+                      role="group"
+                      aria-labelledby="form-statute"
+                  >
+                      <input
+                          type="checkbox"
+                          name="checkbox"
+                          id="statute"
+                      />
+                      <label
+                          class="statute-label"
+                          for="statute"
+                      >
+                          I agree with the newsletter and accept the 
+                          <a href="">Terms</a> and
+                          <a href="">Conditions.</a>
+                      </label>
+                  </div>
+                  <div class="form-btn-submit-box">
+                      <button
+                          class="form-btn-submit"
+                          type="submit"
+                      >
+                          Send
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
               </div>
             </div>
           </div>
@@ -488,6 +610,28 @@
               </svg>
             </a>
           </div>
+          </div>
+          <form class="form-newsletter">
+            <label for="news">Subscribe to the newsletter</label>
+            <div class="box-newsletter">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    id="news"
+                />
+                <button type="submit">
+                    Zapisz się
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24px"
+                        height="24px"
+                    >
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
         </div>
       </div>
     </footer>
